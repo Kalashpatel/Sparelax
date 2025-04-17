@@ -99,6 +99,9 @@
     .section-side ul li{
         margin-bottom: 5px;
     }
+    .logo{
+        width: 260px;
+    }
 }
 @media (min-width: 768px){
     .container{
@@ -231,6 +234,9 @@
     }
     .col-xl-12{
         width: 100%;
+    }
+    .display-block-xl{
+        display: flex;
     }
     .section-side ul li a, .social-side ul li a{
         font-size: 16px;

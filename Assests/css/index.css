@@ -207,7 +207,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*=========== logo ============= */
-
+.navbar{
+    margin-top: 10px;
+}
 .logo{
     /* border: 2px solid black; */
     overflow: hidden;
@@ -395,39 +397,39 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*============== line icon ============= */
-.line{
+.toggle-btn{
     height: auto;
     /* border: 2px solid black; */
     width: 35px;
 }
-.line .line1{
+.toggle-btn .line1{
     width: 24px;
     height: 2px;
     background-color: var(--black);
     margin: 8px;
     transition: all 0.5s ease;
 }
-.line:hover .line1{
+.toggle-btn:hover .line1{
     width: 16px;
 }
-.line .line2{
+.toggle-btn .line2{
     width: 16px;
     height: 2px;
     background-color: var(--black);
     margin: 8px;
     transition: all 0.5s ease;
 }
-.line:hover .line2{
+.toggle-btn:hover .line2{
     width: 24px;
 }
-.line .line3{
+.toggle-btn .line3{
     width: 24px;
     height: 2px;
     background-color: var(--black);
     margin: 8px;
     transition: all 0.5s ease;
 }
-.line:hover .line3{
+.toggle-btn:hover .line3{
     width: 16px;
 }
 
