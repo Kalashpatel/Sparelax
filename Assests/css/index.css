@@ -104,6 +104,9 @@ h1, h2, h3, h4, h5, h6{
     padding-left: var(--gw);
     padding-right: var(--gw);
 } 
+.row-gap{
+    row-gap: 20px;
+}
 .items-center{
     align-items: center;
 }
@@ -118,6 +121,12 @@ h1, h2, h3, h4, h5, h6{
 }
 .self-end{
     justify-self: flex-end;
+}
+.align-end{
+    align-content: flex-end;
+}
+.align-center{
+    align-content: center;
 }
 .grow{
     flex-grow: 1;
@@ -364,6 +373,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 15px;
     background-color: var(--primary-color);
     border: 2px solid transparent;
+    z-index: 5;
 }
 
 .btn::after {
@@ -441,7 +451,9 @@ h1, h2, h3, h4, h5, h6{
     /* border: 2px solid black; */
     border-radius: 30px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0px auto;
+    z-index: -1;
+    padding: 100px;
 }
 .img-container::before, .img-container::after{
     content: "";
@@ -506,113 +518,74 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*============== banner text ============= */
-
-.slide-left{
-    position: absolute;
-    width: 500px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    z-index: 100;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    animation: slidein 2s ease-in-out forwards;
+.hero-title{
+    color: white;
     display: flex;
-}
-
-.slide-left img{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 5%;
-    top: 61%;
-    transform: translate(-50%, -50%);
-}
-.slide-left p{
-    position: absolute;
-    left: 10%;
-    top: 0%;
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.8);
-   
+    gap: 10px;
     font-family: var(--sec-font);
+    font-size: 35px;
+    animation: slidein 1.5s ease-in-out forwards;
+}
+.hero-content{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+.hero-h2{
+    animation: slidein 1.5s ease-in-out forwards;
+}
+.hero-title img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.hero-content h2, .hero-p p{
+    color: white;
+    font-size: 120px;
+    font-family: var(--sec-font);
+}
+.hero-p p{
+    margin-bottom: 30px;
+    animation: slide 1.5s ease-in-out;
+}
+.hero-button{
+    z-index: 5;
 }
 @keyframes slidein{
     0%{
-        left: -100%;
+        transform: translateX(-90%);
         opacity: 0;
     }
     20%{
         opacity: 1;
     }
     100%{
-        left: 28%;
+        transform: translateX(0%);
         opacity: 1;
     }
 }
-.slide-left-2{
-    position: absolute;
-    width: 500px;
-    height: 50px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    z-index: 100;
-    top: 55%;
-    left: 7%;
-    transform: translate(-50%, -50%);
-    animation: slidein 2s ease-in-out forwards;
-}
-.slide-left-2 h2{
-    font-size: 100px;
-    color: white;
-    letter-spacing: 2px;
-    font-family: var(--sec-font);
-}
-.slide-right{
-    position: absolute;
-    width: 900px;
-    height: auto;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    top: 65%;
-    right: 22.5%;
-    /* transform: translate(-50%, -50%); */
-    z-index: 100;
-    animation: slide 2s ease-in-out;
-}
-.slide-right p{
-    font-size: 100px;
-    color: white;
-    font-family: var(--sec-font);
-
-}
 @keyframes slide{
     0%{
-        right: -100%;
+        transform: translateX(100%);
         opacity: 0;
     }
     50%{
         opacity: 1;
     }
     100%{
-        right: 22.5%;
+        transform: translateX(0%);
         opacity: 1;
     }
 }
 
-/*============== button ============= */
-
-.button-p{
-    position: absolute;
-    z-index: 2;
-    top: 83%;
-    left: 9%;
-}
 /*============== banner-section2 end ============= */
 
 /*============== section-3 about============= */
 
 .bgimg{
     position: relative;
-    height: 700px;
+    height: auto;
     /* background-color: #000; */
     overflow: hidden;
 }
@@ -672,7 +645,7 @@ h1, h2, h3, h4, h5, h6{
 .img-side{
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 100px;
     padding: 10px;
     /* overflow: hidden;
     background-image: url(../images/section3-about/woman.jpg);
@@ -686,10 +659,10 @@ h1, h2, h3, h4, h5, h6{
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    -webkit-mask-image: url(../images/section3-about/ab-shape1.png);
+    /* -webkit-mask-image: url(https://dev251.kodesolution.com/sparelax/wp-content/uploads/2025/01/ab-shape1.png);
     -webkit-mask-size: contain;
     -webkit-mask-position: center center;
-    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat; */
 }
 .box1{
     width: 240px;
@@ -716,7 +689,7 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0;
 }
 .bgimg:hover .img-side .box{
-    top: 0%;
+    top: 10%;
     opacity: 1;
 }
 .box p{
@@ -740,7 +713,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .img-1, .img-2{
     width: 100%;
-    height: 350px;
+    height: auto;
     background-color: #F5F2EC;
     border-radius: 20px;
     display: flex;
@@ -756,9 +729,11 @@ h1, h2, h3, h4, h5, h6{
 .massage-1{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 20px;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 .massage-1 img{
     width: 100%;
@@ -766,6 +741,8 @@ h1, h2, h3, h4, h5, h6{
     object-fit: cover;
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
 }
 .img-1:hover .massage-1 img{
     transform: scale(1.2);
