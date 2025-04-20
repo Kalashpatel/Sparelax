@@ -250,6 +250,26 @@
     .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before, .gimg-center::before{
         display: none;
     }
+    /* =============== logo ============= */
+    .logo-bg{
+        height: 200px;
+    }
+    .logo-box{
+        margin-top: 10px;
+    }
+    /* =========== perfume ========== */
+    .p-box{
+        width: calc(100% / 2);
+    }
+    /* ============= footer ========== */
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .links{
+        margin-left: 0px;
+    }
 }
 @media (min-width: 576px){
     .container{
@@ -451,6 +471,26 @@
     .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before, .gimg-center::before{
         display: none;
     }
+    /* =============== logo ============= */
+    .logo-bg{
+        height: 200px;
+    }
+    .logo-box{
+        margin-top: 10px;
+    }
+    /* =========== perfume ========== */
+    .p-box{
+        width: calc(100% / 2);
+    }
+    /* ============= footer ========== */
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .links{
+        margin-left: 0px;
+    }
 }
 @media (min-width: 768px){
     .container{
@@ -612,6 +652,10 @@
     .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before, .gimg-center::before{
         display: block;
     }
+    /* =========== perfume ========== */
+    .p-box{
+        width: calc(100% / 3);
+    }
 }
 @media (min-width: 992px){
     .container{
@@ -760,6 +804,12 @@
         transform: translateX(6%);
         top: 0;
     }
+    /* =========== footer ========== */
+    .footer-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
 @media (min-width: 1200px){
     .container{
@@ -884,6 +934,10 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    /* =========== perfume ========== */
+    .p-box{
+        width: calc(100% / 6);
+    }
 }
 @media (min-width: 1400px){
     .container{
@@ -944,5 +998,12 @@
     .gimg-center, .gimg-center::before{
         width: 406px;
         height: 600px;
+    }
+    /* =========== logo =========== */
+    .logo-bg{
+        height: 250px;
+    }
+    .logo-box{
+        margin-top: 30px;
     }
 }
