@@ -45,6 +45,9 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .align-center-xs{
+        align-content: center;
+    }
     /* ================== top bar =============== */
     .social-side ul li:not(:last-child){
         margin-right: 7px;
@@ -143,6 +146,109 @@
     }
     .img-box-s .icon-box{
         margin: 10px auto;
+    }
+    /* =============== form ============ */
+    .form-box .text-side{
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .form-box .col-xs-12{
+        padding: 0px;
+    }
+    .form-title .about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box11{
+        width: 100%;
+    }
+    /* ============== video ============== */
+    .pd-v{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .video-side{
+        padding: 0px;
+        text-align: center;
+    }
+    .video-side .title .about, .reviews .title .about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icons{
+        margin-top: 0px;
+    }
+    .icon-box-1 img{
+        width: 50px;
+        height: 50px;
+    }
+    .icon-box-1{
+        width: 45%;
+    }
+    .icon-box-1 h4{
+        font-size: 14px;
+    }
+    .video-img{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    /* ============== price ============ */
+    .price-detail{
+        flex-direction: column;
+    }
+    .plan-title h3 a{
+        font-size: 20px;
+    }
+    .plan-title span, .pcontent > p{
+        font-size: 14px;
+    } 
+    .plan-title p{
+        font-size: 18px;
+    }
+    /* ============= testimonial ========== */
+    .reviews{
+        margin-top: 50px;
+    }
+    .reviews .title{
+        margin-bottom: 20px;
+    }
+    .reviews .title h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .review-title .arrows{
+        display: none;
+    }
+    .review-box::before, .face-2::before, .face-3::before{
+        top: 4%;
+        left: 4%;
+    }
+    /* ================ gallery ================ */
+    .gallery-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4, .gimg-center{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4{
+        width: 100%;
+        height: 320px;
+    }
+    .gimg-center{
+        width: 100%;
+        height: 600px;
+        transform: translateX(0%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before, .gimg-center::before{
+        display: none;
     }
 }
 @media (min-width: 576px){
@@ -243,6 +349,108 @@
     .img-box-s .icon-box{
         margin: 10px auto;
     }
+    .form-box .text-side{
+        padding: 15px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .form-box .col-sm-12{
+        padding: 0px;
+    }
+    .form-title .about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box11{
+        width: 100%;
+    }
+    /* ============== video ============== */
+    .pd-v{
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .video-side{
+        padding: 0px;
+        text-align: center;
+    }
+    .video-side .title .about, .reviews .title .about{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icons{
+        margin-top: 0px;
+    }
+    .icon-box-1 img{
+        width: 70px;
+        height: 70px;
+    }
+    .icon-box-1{
+        width: 45%;
+    }
+    .icon-box-1 h4{
+        font-size: 20px;
+    }
+    .video-img{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    /* ============== price ============ */
+    .price-detail{
+        flex-direction: column;
+    }
+    .plan-title h3 a{
+        font-size: 20px;
+    }
+    .plan-title span, .pcontent > p{
+        font-size: 14px;
+    } 
+    .plan-title p{
+        font-size: 18px;
+    }
+    /* ============= testimonial ========== */
+    .reviews{
+        margin-top: 50px;
+    }
+    .reviews .title{
+        margin-bottom: 40px;
+    }
+    .reviews .title h2{
+        font-size: 45px;
+        text-align: center;
+    }
+    .review-title .arrows{
+        display: none;
+    }
+    .review-box::before, .face-2::before, .face-3::before{
+        top: 5%;
+        left: 2%;
+    }
+    /* ================ gallery ================ */
+    .gallery-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4, .gimg-center{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4{
+        width: 100%;
+        height: 320px;
+    }
+    .gimg-center{
+        width: 100%;
+        height: 600px;
+        transform: translateX(0%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before, .gimg-center::before{
+        display: none;
+    }
 }
 @media (min-width: 768px){
     .container{
@@ -332,6 +540,77 @@
     }
     .img-box-s .icon-box{
         margin: 10px auto;
+    }
+    /* ============== form =========== */
+    .box11{
+        width: 47%;
+    }
+    /* =============== video ========= */
+    .icon-box-1{
+        width: 50%;
+    }
+    .icon-box-1 h4{
+        font-size: 25px;
+    }
+    /* ================== price ============= */
+    .plan-title h3 a{
+        font-size: 25px;
+    }
+    .plan-title span, .pcontent > p{
+        font-size: 14px;
+    } 
+    .plan-title p{
+        font-size: 20px;
+    }
+    .row > *:last-child{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ================ gallery ================ */
+    .gallery-grid{
+        display: flex;
+        width: 100%;
+        min-height: 950px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4, .gimg-center{
+        position: absolute;
+    }
+    .gimg-1{
+        top: 0;
+        left: 0;
+    }
+    .gimg-2{
+        left: 0;
+        top: 48.5%;
+        transform: translateY(-50%);
+    }
+    .gimg-3{
+        top: 68%;
+        left: 0;
+    }
+    .gimg-4{
+        top: 68%;
+        right: 0%;
+    }
+    .gimg-center{
+        right: 0%;
+        transform: translateX(5%);
+        top: 0;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4{
+        width: 345px;
+        height: 280px;
+        margin: 0;
+    }
+    .gimg-center{
+        width: 345px;
+        height: 600px;
+        margin: 0;
+    }
+    .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before, .gimg-center::before{
+        display: block;
     }
 }
 @media (min-width: 992px){
@@ -444,6 +723,43 @@
     .img-box-s .icon-box{
         margin: 30px auto;
     }
+    /* =============== form =============== */
+    .box11{
+        width: 80%;
+    }
+    .form-items{
+        margin-left: 40px;
+    }
+    .form-content .submit{
+        margin-left: 60px;
+    }
+    /* =========== video ========== */
+    .icon-box-1 h4{
+        font-size: 20px;
+    }
+    .icon-box-1{
+        width: 45%;
+    }
+    .video-side{
+        text-align: left;
+    }
+    .video-side .title .about{
+        margin-left: 0px;
+    }
+    /* =========== gallery ========== */
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4, .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before{
+        width: 450px;
+        height: 280px;
+    }
+    .gimg-center, .gimg-center::before{
+        width: 450px;
+        height: 600px;
+    }
+    .gimg-center{
+        right: 0%;
+        transform: translateX(6%);
+        top: 0;
+    }
 }
 @media (min-width: 1200px){
     .container{
@@ -514,6 +830,60 @@
     .text-side .title h2{
         font-size: 55px;
     }
+    /* ========= video =========== */
+    .icon-box-1 h4{
+        font-size: 25px;
+    }
+    /* =========== price ========== */
+    .price-detail{
+        flex-direction: row;
+    }
+    .pbox .pimg{
+        width: 80px;
+        height: 80px;
+    }
+    .pcontent{
+        width: 400px;
+    }
+    /* ============ testimonial =========== */
+    .review-box::before, .face-2::before, .face-3::before{
+        top: 2%;
+        left: 0%;
+    }
+    /* =========== gallery ========== */
+    .gallery-grid{
+        min-height: 650px;
+    }
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4, .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before{
+        width: 345px;
+        height: 280px;
+    }
+    .gimg-center, .gimg-center::before{
+        width: 345px;
+        height: 600px;
+    }
+    .gimg-1{
+        top: 0;
+        left: 0;
+    }
+    .gimg-2{
+        top: 71%;
+        left: 0;
+    }
+    .gimg-3{
+        left: 70%;
+        top: 0;
+    }
+    .gimg-4{
+        top: 49%;
+        left: 70%;
+    }
+    .gimg-center{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 @media (min-width: 1400px){
     .container{
@@ -532,5 +902,47 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    /* =========== form ============ */
+    .box11{
+        width: 45%;
+    }
+    .form-items{
+        margin-left: 10px;
+    }
+    .form-content .submit{
+        margin-left: 20px;
+    }
+    /* =========== video ========== */
+    .icon-box-1 h4{
+        font-size: 27px;
+    }
+    .icons{
+        margin-top: 30px;
+    }
+    .video-img{
+        margin-left: 30px;
+    }
+    /* ============ price ========== */
+    .pcontent{
+        width: 500px;
+    }
+    .plan-title h3 a{
+        font-size: 25px;
+    }
+    .plan-title span, .pcontent > p{
+        font-size: 16px;
+    } 
+    .plan-title p{
+        font-size: 25px;
+    }
+    /* ============= gallery =========== */
+    .gimg-1, .gimg-2, .gimg-3, .gimg-4, .gimg-1::before, .gimg-2::before, .gimg-3::before, .gimg-4::before{
+        width: 406px;
+        height: 280px;
+    }
+    .gimg-center, .gimg-center::before{
+        width: 406px;
+        height: 600px;
     }
 }

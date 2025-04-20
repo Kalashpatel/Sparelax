@@ -718,14 +718,14 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 20px;
     display: flex;
     padding: 15px 0px;
-    /* transform: translateY(100%);
+    transform: translateY(100%);
     transition: all 0.7s ease;
-    visibility: hidden; */
+    visibility: hidden;
 }
-/* .img-hover:hover .img-1, .img-hover:hover .img-2{
+.img-hover:hover .img-1, .img-hover:hover .img-2{
     transform: translateY(0%);
     visibility: visible;
-} */
+}
 .massage-1{
     width: 100%;
     height: 100%;
@@ -1036,21 +1036,16 @@ h1, h2, h3, h4, h5, h6{
 .form-box{
     width: 100%;
     height: auto;
-    display: flex;
     border-radius: 20px;
     background-color: var(--primary-color);
     overflow: hidden;
-    margin-bottom: 20px;
 }
-.form-box .face-img{
+.face-img{
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.form-box .col-6{
-    padding-left: 0%;
-}
-.form-box .face-img img{
+.face-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1346,7 +1341,7 @@ option:hover{
 }
 .price-detail{
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     display: flex;
     margin-top: 20px;
     /* background-color: #e65252; */
@@ -1357,7 +1352,7 @@ option:hover{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     z-index: 1;
     transform: translateX(-100%);
     opacity: 0;
@@ -1406,7 +1401,7 @@ option:hover{
 .pcontent{
     position: relative;
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 .pcontent .plan-title{
     display: flex;
@@ -1466,7 +1461,7 @@ option:hover{
 }
 .review-box{
     width: 100%;
-    height: 300px;
+    height: auto;
     background: url(../images/section10-review/testimonial-item-mask.png);
     background-size: cover;
     border-radius: 20px;
@@ -1534,7 +1529,7 @@ option:hover{
 .content-box-1 .review-stars i:last-child{
     color: var(--white);
 }
-.r-animation-1{
+/* .r-animation-1{
     animation: rotate 15s ease infinite;
 }
 .r-animation-2{
@@ -1542,7 +1537,7 @@ option:hover{
 }
 .r-animation-3{
     animation: rotate-3 15s ease infinite;
-}
+} */
 @keyframes rotate{
     0%{
         order: 1;
@@ -1602,7 +1597,7 @@ option:hover{
 }
 .gallery-grid{
     width: 100%;
-    height: 650px;
+    min-height: 650px;
     position: relative;
     /* background-color: #707070; */
     margin-top: 20px;
@@ -1691,7 +1686,7 @@ option:hover{
 }
 .logo-box{
     width: 100%;
-    height: 100%;
+    height: 110px;
     display: flex;
     margin-top: 30px;
     gap: 30px;
