@@ -656,6 +656,12 @@
     .p-box{
         width: calc(100% / 3);
     }
+    /* =========== footer ========== */
+    .footer-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
 @media (min-width: 992px){
     .container{
@@ -804,12 +810,7 @@
         transform: translateX(6%);
         top: 0;
     }
-    /* =========== footer ========== */
-    .footer-content{
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
-    }
+    
 }
 @media (min-width: 1200px){
     .container{
